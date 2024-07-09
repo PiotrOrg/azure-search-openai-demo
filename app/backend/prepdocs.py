@@ -373,7 +373,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.verbose:
-        logging.basicConfig(format="%(message)s")
+        logging.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
         # We only set the level to INFO for our logger,
         # to avoid seeing the noisy INFO level logs from the Azure SDKs
         logger.setLevel(logging.INFO)

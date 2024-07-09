@@ -259,7 +259,7 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", "-v", action="store_true", help="Verbose output")
     args = parser.parse_args()
     if args.verbose:
-        logging.basicConfig(level=logging.WARNING, format="%(message)s")
+        logging.basicConfig(level=logging.WARNING, format='%(message)s')
         # We only set the level to INFO for our logger,
         # to avoid seeing the noisy INFO level logs from the Azure SDKs
         logger.setLevel(logging.INFO)
